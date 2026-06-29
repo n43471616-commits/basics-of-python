@@ -1,0 +1,221 @@
+#type conversion
+a = int("2")
+b = 4.23
+
+sum = (a+b)
+print(sum)
+a1 = 7.7
+a2 = 4.0
+sum1= a1+a2
+print(sum1)
+print(type(sum1))
+
+
+# input in python
+#       input() statement is used to accept value (using keyboard) from user
+
+# 1. input()       # result for input() is always a str
+
+name = input(" your name : " )
+print("Welcome : " , name)
+age = int(input(" your age : " ))
+print("you are not elligible " ,age)
+print("choose other option ; a. i am recommended   b. i am selected")
+options = input("choosen option" ,  )
+print("you can enter now through aadhar card")
+int(input("Aadhar no." ,))
+print("you have scammed 🤣🤣🤣\n(^///^)(^///^)(^///^)(^///^)(^///^)(^///^)(❁´◡`❁)(❁´◡`❁)(●'◡'●) ")
+
+
+# Practice
+
+
+#Q1.  write a program to input 2 numbers & print their sum
+val1 = int(input(" enter yor first value for addition : " ))
+val2 = int(input(" enter yor second value for addition : "))
+
+sum2 = val1 + val2
+print ("your answer :" , int(sum2) )
+
+#Q2. WAP to input side of a square & print its area
+print(" Now you can solve any question related area of square")
+side = int(input("first side of square : "))
+side1  = int(input("second side of square : "))
+print("your area of square :", side * side1)
+
+
+#strings
+
+
+str1 = "this is a string.\ni know how to use."  #  \n  (line behind this symbol goes as separate line.)
+
+str1a = "this is a string.\ti know how to use." # \t   used to create tab space
+str2 = 'this is a string'
+str3 = """this is a string"""
+print(str1)
+
+#operators
+      #concatenation : mean to add two word strings
+str2a = "Uttam"
+str2b = "Singh"
+print(str2a+str2b)
+len2 = len(str2)     # used to know length of string
+print(len2)
+
+
+          # index of string
+
+          # ex:   i_know_who_I_am
+          #       0123456789__________etc ( gaps or space between words count)
+             #    (use to only excess particular index number stored item but cannot replace)
+str4 = "i know who i am"
+print (str4[0])       # ans: will be   i
+
+
+  #slicing   (v.v.impp)
+    # accessing parts of string
+  #str[starting_idx : ending idx]
+
+ # positive index    # last index given like below 6 mean 6th word will not print
+str1b = "i am a student"
+print(str1b[0:6])
+
+
+print(str1b[0 :])                         # mean   0:end
+print(str1b[0 : len(str1b)])               # 0:end
+print(str1b[ : 6 ])                              #   start:6
+
+# Negative index
+     #Apple
+     #-5-4-3-2-1_______etc.
+# same as positive but just negative  and starts from left to right
+# and in this starting function will not print like logic of positive index
+
+
+    # Basic strings functions
+          # there is lot os string functions ( can see through type str.)
+              # cannot learn all functions just learn basic functions
+
+str2d = "i am heapy"
+print(str2d.endswith("py"))     # returns true if string ends with py
+print(str2d.capitalize())       #capitalizes first character
+print(str2d.replace("a","o"))      # replace old character with new
+print(str2d.replace("am" , "will"))    # same   (just another example)
+print(str2d.find("am"))                    # returns 1st index of 1st occurred
+print(str2d.find("z"))      # answer will be -1 because there is no such character in string
+print(str2d.count("a"))   #to count characters
+print(str2d.count("am"))    # same ( just another example)
+
+     # practice
+#Q1. WAP to input user's first name & print its length
+a = input("user's first name: ")
+print("length of your name" , len(a))
+
+#Q2. WAP to find the occurrence of '$' in a string
+str2e = "i $$$ rich"
+print(str2e.count("$"))
+
+
+ # conditional Statements
+ #if-elif-else (SYNTAX)
+    #SYNTAX means right way to right code
+
+
+# some small rules
+#1.  we can take if after if continuously and  many times
+#2.  we can take elif after if continuously and many times
+#3. but we can  start this with one and only if
+#4. we can start statement with only tab space
+#5. don't forget to use (:)
+#6. we can end this series just leaving one line
+
+
+num = 3
+if( num == 2):
+    print(num)  # statement
+elif( num == 3):
+    print(num)
+
+light = "green"
+if(light == "green"):
+    print("you can go")
+elif(light != "yellow"):
+    print("you may need to stop")
+elif(light == "red"):
+    print("you need to stop")
+
+o = 2
+p = 3
+sum = o+p
+print("sum")
+if(sum==6):
+    print("false")
+if(sum==5):
+    print("true")
+
+
+# Conditional statements
+  #grade students based on marks  ((and) use)
+marks = int(input("Enter marks: "))
+if(marks >= 90):
+    print("Grade A")
+elif(marks <90 and marks >=80):
+    print("Grade B")
+elif(marks < 80 and marks >= 60):
+    print("Grade C")
+else:
+    print("Grade D")
+
+
+# nesting
+
+age = int(input("Enter your age: "))
+if(age >= 18 and age <= 80):
+    print(" you can drive")
+else:
+    print("you cannot drive")
+
+# same as upper code
+
+age = int(input("Enter your age: "))
+if(age>= 18):
+    if(age <=80):
+        print("you cannot drive")
+    else:
+        print("you can drive")
+else:
+    print("Cannot drive")
+
+#practice
+#Q1. WAP to check if a number entered by the user is odd or even
+
+user = int(input(" enter number"))
+a = user % 2
+if(a == 0):
+    print("even number")
+else:
+    print("odd numder")
+
+
+#Q2. WAP to find the greatest of 3 numbers entered by user.
+
+a = int(input("first value"))
+b = int(input("second value"))
+c = int(input("third value"))
+if( a > b and a > c):
+    print("1st value is greater")
+elif(b > a and b > c):
+    print("2nd value is greater")
+elif(c > a and c > b):
+    print("3rd value is greater")
+else:
+    print("NO number is greater in between all values")
+
+#Q3.WAP to check if a number is a multiple of 7 or not.
+
+user = int(input("Enter a number: "))
+a = user%7
+if(a == 0):
+    print("this number is multiple of seven")
+else:
+    print("This number is not multiple of seven")
