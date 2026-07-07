@@ -219,3 +219,121 @@ if(a == 0):
     print("this number is multiple of seven")
 else:
     print("This number is not multiple of seven")
+
+
+# list 
+#eg:01
+marks = [10, 20, 30, 40, 50]
+print(marks)  # prints the entire list
+print(marks[0])  # prints the first element of the list
+print(type(marks))  # prints the type of the list
+print(len(marks))  # prints the length of the list
+
+#eg:01
+#str = "Hello, World!"
+#print(str)  # prints the entire string  
+#str[0] = "h"  # trying to change the first character of the string
+#print(str)  # this will print error because strings are immutable in Python means cannot be changed so we will use list to change the string
+
+list =["Alice", 20, "A"]  # a list with three elements
+print(list[0])  # prints the first element of the list
+list[0] = "Bob"  # trying to change the first element of the list
+print(list)  # this will print the modified list because lists are mutable in Python means can be changed so we will use list to change the tuple
+
+#List Slicing
+
+#same as str slicing
+#eg:01
+marks = [10, 20, 30, 40, 50]
+#in this count like 0,1,2,3,4
+print(marks[1:4])  # prints elements from index 1 to 3
+print(marks[:3])   # prints elements from index 0 to 2
+print(marks[2:5])  # prints elements from index 2 to 4
+print(marks[1:])
+
+
+#List methods
+list = [20, 10, 30, 70, 50]
+list.append(60)  # adds 60 to the end of the list
+print(list)
+list.sort()  # sorts the list in ascending order
+print(list)
+list.sort(reverse=True)  # sorts the list in descending order
+print(list)
+list.reverse()  # reverses the list
+print(list) 
+list.insert(2, 25)  # inserts 25 at index 2
+print(list) 
+list.pop(2)  # removes the last element of the list
+print(list)
+
+#Tuple in python
+#a built in data type whis in immutable means cannot be changed
+# in single tuple we need to use coma (,) after the element of the tuple
+tup = (10, 20, 30, 40, 50)
+print(tup)  # prints the entire tuple
+print(type(tup))  # prints the type of the tuple
+print(tup[:3])  # prints elements from index 0 to 2
+print(tup.index(30))  # prints the index of the element 30
+print(tup.count(20))  # prints the count of the element 20 in the tuple
+
+
+
+# list 
+#eg:01
+marks = [10, 20, 30, 40, 50]
+print(marks)  # prints the entire list
+print(marks[0])  # prints the first element of the list
+print(type(marks))  # prints the type of the list
+print(len(marks))  # prints the length of the list
+
+#eg:01
+#str = "Hello, World!"
+#print(str)  # prints the entire string  
+#str[0] = "h"  # trying to change the first character of the string
+#print(str)  # this will print error because strings are immutable in Python means cannot be changed so we will use list to change the string
+
+list =["Alice", 20, "A"]  # a list with three elements
+print(list[0])  # prints the first element of the list
+list[0] = "Bob"  # trying to change the first element of the list
+print(list)  # this will print the modified list because lists are mutable in Python means can be changed so we will use list to change the tuple
+
+#List Slicing
+
+#same as str slicing
+#eg:01
+marks = [10, 20, 30, 40, 50]
+#in this count like 0,1,2,3,4
+print(marks[1:4])  # prints elements from index 1 to 3
+print(marks[:3])   # prints elements from index 0 to 2
+print(marks[2:5])  # prints elements from index 2 to 4
+print(marks[1:])
+
+
+#List methods
+list = [20, 10, 30, 70, 50]
+list.append(60)  # adds 60 to the end of the list
+print(list)
+list.sort()  # sorts the list in ascending order
+print(list)
+list.sort(reverse=True)  # sorts the list in descending order
+print(list)
+list.reverse()  # reverses the list
+print(list) 
+list.insert(2, 25)  # inserts 25 at index 2
+print(list) 
+list.pop(2)  # removes the last element of the list
+print(list)
+
+#Tuple in python
+#a built in data type whis in immutable means cannot be changed
+# in single tuple we need to use coma (,) after the element of the tuple
+tup = (10, 20, 30, 40, 50)
+print(tup)  # prints the entire tuple
+print(type(tup))  # prints the type of the tuple
+print(tup[:3])  # prints elements from index 0 to 2
+print(tup.index(30))  # prints the index of the element 30
+print(tup.count(20))  # prints the count of the element 20 in the tuple
+
+
+
