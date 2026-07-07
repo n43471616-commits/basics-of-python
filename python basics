@@ -336,4 +336,40 @@ print(tup.index(30))  # prints the index of the element 30
 print(tup.count(20))  # prints the count of the element 20 in the tuple
 
 
+#Practice 
+
+#Q1. WAP to ask the user to enter names of their 3 favourate movies & store them in list.
+
+movies = input("Enter any three movies you like: ")
+mov = []
+mov.append(movies)  # adds the movies entered by the user to the list
+print("You entered:", mov)  # prints the movies entered by the user
+
+#same but good way
+mov.append(input("Enter any three movies you like: "))  # adds the movies entered by the user to the list
+print("You entered:", mov)  # prints the movies entered by the user
+
+
+
+#Q2. WAP tp check if a list contains a palindrome of elements.(Hint:use copy() method)
+#                   [1,2,3,2,1]             [1,"abc","abc",1]
+
+list1 = [1, 2, 3, 2, 1]
+list2 = list1.copy()  # creates a copy of the list
+list2.reverse()  # reverses the copy
+if (list1 == list2):
+    print("The list is a palindrome")  # prints if the list is a palindrome
+else:
+    print("The list is not a palindrome")  # prints if the list is not a palindrome 
+
+
+#q3. WAP to count the number of students with the grade "A" in the following tuple.
+#     ["C", "D", "A", "A", "B", "B", "A"]
+#    and store the above values in a list and sort them from "A" to "D".
+
+Grade = ("C", "D", "A", "A", "B", "B", "A")
+print(Grade.count("A"))  # prints the number of students with the grade "A"
+grade2=list(Grade)  # adds the grades to the list
+grade2.sort()  # sorts the list from "A" to "D" 
+print(grade2)  # prints the sorted list
 
