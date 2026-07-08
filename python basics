@@ -373,3 +373,69 @@ grade2=list(Grade)  # adds the grades to the list
 grade2.sort()  # sorts the list from "A" to "D" 
 print(grade2)  # prints the sorted list
 
+#Dictionary
+
+#dictionary is a collection of key-value pairs
+#The keys in a dictionary must be unique and immutable (e.g., strings, numbers, tuples), while the values can be of any data type and can be duplicated.
+
+student = {
+    "name": "Alice",
+    "age": 20,
+    "grade": "A"
+}
+print(student)  
+print(student["name"])  # prints the name of the student
+print(student["age"])   # prints the age of the student
+print(student["grade"]) # prints the grade of the student
+student["name"] = "Bob"  # updates the name of the student
+print(student)  # prints the updated dictionary
+student["surname"] = "Smith"  # adds a new key-value pair to the dictionary
+print(student)  # prints the updated dictionary with the new key-value pair
+
+
+# Nested Dictionaries
+
+student = {
+    "name" : "Uttam" ,
+    " Surname" : "Singh" ,
+    "subjects" : {
+        "Math" : 90 ,
+        "Science" : 85 ,
+        "English" : 95
+    }
+}
+print(student)  # prints the entire student dictionary
+print(student["subjects"]["Math"])  # prints the Math score of the student
+print(student.keys())  # prints all the keys in the student dictionary
+print(student.values())  # prints all the values in the student dictionary
+print(student.items())  # prints all the key-value pairs in the student dictionary
+print(len(student))  # prints the number of key-value pairs in the student dictionary
+print(student.get("name"))  # prints the value associated with the key "name"
+print(student.update({"age": 21}))  # updates the student dictionary with a new key-value pair
+print(student)  # prints the updated student dictionary
+
+
+#Sets
+# set is collection of unique elements. It is unordered and mutable. but we cannot change the elements of a set once it is created. but we can add or remove elements from a set.
+#it ignores duplicate values and does not maintain any order of elements.
+
+
+collection = {1, 2, 2, 2, 3, 4, 5, "hello", "world", "hello"} 
+print(collection)  # prints the entire set  
+print(type(collection))  # prints the type of the collection
+
+collection2 = set()
+print(type(collection2))  # prints the type of the empty set
+collection2.add ((1, 2, 3))  # adds an element to the set
+collection2.add (2)  # adds another element to the set  
+collection2.remove((1, 2, 3))  # removes an element from the set
+print(collection2)  # prints the updated set after adding and removing elements 
+print(collection.pop())  # to take random element from the set 
+
+
+set1 = {1, 2, 3, 4, 5}
+set2 = {4, 5, 6, 7, 8}
+print(set1.union(set2))  # prints the union of set1 and set2
+print(set1.intersection(set2))  # prints the intersection of set1 and set2
+
+
