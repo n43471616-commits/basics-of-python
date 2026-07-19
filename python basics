@@ -474,3 +474,141 @@ if (y == 100):
     print("Very good marks")
 else:
     print("Good marks")
+
+# Loop
+
+a = 1
+while a <= 10:
+    print("Hello Mummy" , a)
+    a += 1
+
+#Q1. Print number from 1 to 100.
+number = 1
+while number <= 100 :
+ print("your number =" , number)
+ number +=1
+
+
+print(" second question answer below")
+
+
+#Q2. Print number from 100 to 1.
+number01 = 100
+while number01 >=1 :
+   print("your number =" , number01)
+   number01 -=1
+
+#Q3. Print the multiplication table of any mumber.
+
+n = int(input("enter number for its table ="))
+x = 1 
+while x <=10 :
+   print (" your table =" , n*x)
+   x += 1
+
+#Q4. Print the elements of the following list using loop:
+#            [1,4,9,16,25,36,49,64,81,100]
+
+user = int(input("Enter nummber"))
+x = 1
+while x <=10 :
+   print(" your loop = ", user**x)
+   x += 1
+
+
+   # Breaks
+
+i = 0
+while i <= 6:
+   print (i)
+   if( i == 6):
+      print("loop ended")
+      break;
+   else:
+      print("finding")
+   i += 1
+
+# continue
+
+i1 = 1
+while i1 <=30:
+   if(i1%2 == 0):
+      i1 += 1
+      continue #skip
+   print(i1)
+   i1 += 1
+
+# for loops 
+# Loops are used for sequence traveral. Fr traversing list , string , tuples etc.
+
+list = [1,2,3,4,5,6,7,8,9]
+for val in list:
+   print(val)
+
+vegitables = ["potato", "tomato", "ladyfinger", "cucumber"]
+for val in vegitables:
+   print(val)
+else:
+   print("END")
+
+   
+str = "Uttam Singh"
+for char in str:
+   if (char == "a"):
+      break
+      print(char)
+   else:
+      print (" END")
+
+# Practice 
+
+#Q1. print the following elements of the following lidt using a loop:
+#                        [1,4,9,16,25,36,49,64,81,100]
+
+list01 = [1,4,9,16,25,36,49,64,81,100]
+for val in list01 :
+   print(val)
+
+
+#Q2. Search for a number x in thid tuple using loop.
+#              [1,4,9,16,25,36,49,64,81,100]
+
+tup = {1,4,9,16,25,36,49,64,81,100}
+user = int(input("enter any number to check your number exist in tupple:"))
+for val in tup:
+   if( user == val):
+      print("found")
+      break
+      print(val)
+   else:
+      print("END")
+
+
+# Range
+# Range function returnes a  sequence of numbers, from 0 by default , and increments by 1(by default), and stops before a specific number.
+   # Range(start?,stop,step?)
+   # step mean starting value will increase by step value
+
+for val in range(2,10,3):
+   print(val)
+
+for val in range(0,101,2):
+   print(val)
+
+
+#  Practice
+
+#Q1. Print numbers from 1 to 100.
+
+for val in range(1,101):
+   print(val)
+
+#Q2. Print numbers from 100 to 1.
+for val in range(101,0):
+   print(val)
+
+#Q3. Print the multiplication table of a number n.
+user01 = int(input("Enter nuber for table"))
+for val in range(1,11):
+   print(user01*val)
+
